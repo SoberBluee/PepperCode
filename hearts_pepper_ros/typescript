@@ -1,0 +1,102 @@
+Script started on Wed 29 Jan 2020 16:34:43 GMT
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_rosethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros$ cd scripts/
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ ls
+example.launch  [0m[01;32mnode.py[0m  pepper_explore.py  [01;32mpepper.py[0m
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ rosrun heartss_pepper_ros node.py
+Traceback (most recent call last):
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 71, in <module>
+    n = NodeExample()
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 16, in __init__
+    self.pub = rospy.Publisher(
+UnboundLocalError: local variable 'rospy' referenced before assignment
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ [K]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ rosrun hearts_pepper__ros node.py
+Traceback (most recent call last):
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 71, in <module>
+    n = NodeExample()
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 16, in __init__
+    self.pub = rospy.Publisher(
+UnboundLocalError: local variable 'rospy' referenced before assignment
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ [K]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ rosrrun hearts_pepper_ros node.py
+Traceback (most recent call last):
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 71, in <module>
+    n = NodeExample()
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 16, in __init__
+    self.pub = rospy.Publisher(
+UnboundLocalError: local variable 'rospy' referenced before assignment
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ [K]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ rosrun hearts_pepper_ros node.py
+Traceback (most recent call last):
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 71, in <module>
+    n = NodeExample()
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 16, in __init__
+    self.pub = rospy.Publisher(
+UnboundLocalError: local variable 'rospy' referenced before assignment
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ ^C
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ rosrun hearts_pepper_ros node.py
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 11
+    import rospy
+         ^
+IndentationError: expected an indented block
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ rosrun hearts_pepper_ros node.py
+Traceback (most recent call last):
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 69, in <module>
+    rospy.init_node("nodeexample", anonymous=True)
+NameError: name 'rospy' is not defined
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ rosrun hearts_pepper_ros node.py
+Traceback (most recent call last):
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 71, in <module>
+    n = NodeExample()
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 16, in __init__
+    self.pub = rospy.Publisher(
+UnboundLocalError: local variable 'rospy' referenced before assignment
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ pytohn[K[K[Khon[K]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ pythonrosrun hearts_pepper_ros node..py
+[INFO] [1580316714.439677]: publishing value: state: True
+targetName: "Face"
+faceWidth: 0.1
+Traceback (most recent call last):
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 72, in <module>
+    n.gaze_function()
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 45, in gaze_function
+    self.pub.publish(val)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 879, in publish
+    data = args_kwds_to_message(self.data_class, args, kwds)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/msg.py", line 121, in args_kwds_to_message
+    raise TypeError("expected [%s] but got [%s]"%(data_class._slot_types[0], arg._type))
+TypeError: expected [bool] but got [gaze_msgs/face_detection]
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ rosrun hearts_pepper_ros node..py
+[INFO] [1580316778.392833]: publishing value: state: True
+targetName: "Face"
+faceWidth: 0.1
+Traceback (most recent call last):
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 73, in <module>
+    n.gaze_function()
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 46, in gaze_function
+    self.pub.publish(val)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 879, in publish
+    data = args_kwds_to_message(self.data_class, args, kwds)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/msg.py", line 121, in args_kwds_to_message
+    raise TypeError("expected [%s] but got [%s]"%(data_class._slot_types[0], arg._type))
+TypeError: expected [bool] but got [gaze_msgs/face_detection]
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ rosrun hearts_pepper_ros node..py
+Traceback (most recent call last):
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 72, in <module>
+    n = NodeExample()
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 49, in __init__
+    rate.sleep()
+NameError: global name 'rate' is not defined
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ rosrun hearts_pepper_ros node..py
+[INFO] [1580317007.726578]: Publishing value: state: True
+radius: 1
+Traceback (most recent call last):
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 74, in <module>
+    n.explore_function()
+  File "/home/ethan/catkin_ws/src/hearts_pepper_ros/scripts/node.py", line 59, in explore_function
+    rate.sleep(1)
+TypeError: sleep() takes exactly 1 argument (2 given)
+]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ rosrun hearts_pepper_ros node..py
+[INFO] [1580317041.895470]: Publishing value: state: True
+radius: 1
+^C]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ rosrun hearts_pepper_ros node..py
+[INFO] [1580317138.482521]: Publishing value: state: True
+radius: 1
+^C]0;ethan@ethan-Surface-Pro-4: ~/catkin_ws/src/hearts_pepper_ros/scriptsethan@ethan-Surface-Pro-4:~/catkin_ws/src/hearts_pepper_ros/scripts$ rosrun hearts_pepper_ros node..py
+[INF
